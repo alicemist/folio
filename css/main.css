@@ -99,7 +99,7 @@
     clip-path:polygon(0 0, 100% 0, 100% 80%, 0 100%);
     padding-bottom:10%}@media(max-width: 75em){#about{height:100%;
     -webkit-clip-path:none;
-    clip-path:none}}#about .about-wrapper{grid-template-columns:1fr 1fr}@media(max-width: 37.5em){#about .about-wrapper{padding-bottom:5rem;
+    clip-path:none}}#about .about-wrapper{grid-template-columns:1fr 0fr}@media(max-width: 37.5em){#about .about-wrapper{padding-bottom:5rem;
     grid-template-columns:1fr}}#about .about-wrapper__image{display:flex;
     height:100%;
     align-items:center;

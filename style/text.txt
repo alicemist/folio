@@ -1,0 +1,58 @@
+idm.app.url=https://192.168.124.50:8443/idm
+modeler.app.url=https://192.168.124.50:8443/modeler
+worker-updater-service.app.url=https://192.168.124.50:8443/worker-updater-service
+daphne.services.ml.url=https://192.168.124.50:8443
+
+
+rpa-admin.secured.key.services.url=https://192.168.124.50:8443/rpa-admin/app/rest/admin/secured-keys/
+
+rpa-admin.app.url=https://192.168.124.50:8443/rpa-admin
+rpa-admin.login.url=https://192.168.124.50:8443/rpa-admin/app/authentication
+rpa-admin.db.definition.services.url=https://192.168.124.50:8443/rpa-admin/app/rest/admin/db-definitions/
+
+### secured-key(sadece localhost olmalı)(20092022 tarihinde eklendi.)
+secured-key.app.url=https://localhost:8443/secured-key
+
+scheduler.app.url=https://192.168.124.50:8443/scheduler
+scheduler.app.rest.url=https://192.168.124.50:8443/scheduler/app/rest/
+scheduled.process.url=https://192.168.124.50:8443/scheduler/app/rest/process-instances
+
+
+executor.app.url=https://192.168.124.50:8443/executor-service
+executor.rest.url=https://192.168.124.50:8443/executor-service/executor/rest
+executor.queued.process.url=https://192.168.124.50:8443/executor-service/executor/rest/process-instances
+executor.mail.url=https://192.168.124.50:8443/executor-service/executor/rest/mail
+executor.file.url=https://192.168.124.50:8443/executor-service/executor/rest/file
+executor.ftp.url=https://192.168.124.50:8443/executor-service/executor/rest/ftp
+
+
+elasticsearch.enabled=true
+elasticsearch.host=localhost
+elasticsearch.port=9200
+elasticsearch.username=elastic
+elasticsearch.password=ilwJ6mGDhoGpoEmgXbzT
+
+mask.response=true  
+unmasked.character.count=3
+
+connector-service.app.url=https://192.168.124.50:8443/connector-service
+websocket.url=https://192.168.124.50:8443/connector-service/generic-socket-connection
+chatbotserver.url=https://192.168.124.50:8443/
+whatsappserver.url=http://192.168.124.52:8443/
+orchestrator.log.folder-path=C:\RobustaOrchestrator\robusta\logs
+
+internal.rest.username=Robusta_Internal
+#internal.rest.password=vault(RPASS,RPASS)
+internal.rest.password=20Cognitive20
+### enable when process details log to file. (transaction-summary, transaction-detail)	 
+orchestrator.logToFileEnabled=false
+orchestrator.logToFileFolderPath=C:\RobustaOrchestrator\robusta\LOG_FOLDER/
+
+### enables app group list menu on landing page of scheduler.
+scheduler.app-group-list-menu.enabled=true
+##### COMMUNITY EDITION #####
+community-edition.enabled=false
+##### RobustaRestTemplate Timeout #####
+rest.template.connect.timeout=10000
+rest.template.connection.request.timeout=10000
+rest.template.socket.timeout=1800000

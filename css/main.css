@@ -65,7 +65,7 @@
     display:inline-block}.footer__text a:hover,.footer__text a:active{color:#36d1dc}.footer hr{margin:1rem auto;
     border:0;
     width:50%;
-    border-top:2px solid rgba(255,255,255,.1)}.social-links{display:flex;
+    border-top:2px solid rgb(255, 255, 255)}.social-links{display:flex;
     justify-content:center}.social-links a{font-size:3rem;
     display:flex;
     flex-direction:column;

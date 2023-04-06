@@ -76,7 +76,23 @@
     ></script>
   <body>
     <!-- Hero Section -->
+    
     <div id="hero">
+      <a href="" class="toggle-down-link" aria-label="scroll-down">
+        <div class="toggle-down"></div>
+        <script>
+          document.getElementById("toggleButton").addEventListener("click", function() {
+              var currentStyle = document.querySelector('link[rel="stylesheet"]');
+              
+              if (currentStyle.getAttribute("href") === "dark.css") {
+                  currentStyle.setAttribute("href", "main.css");
+              } else {
+                  currentStyle.setAttribute("href", "dark.css");
+              }
+          });
+      </script>
+      
+      </a>
       <section class="container">
         <h1 class="hero-title">
           Hi, my name is <span class="text-color-main name">Ali Cem</span>
@@ -84,12 +100,13 @@
           I'm the Solutions Architect.
         </h1>
         <p class="hero-cta">
+          
           <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
         </p>
       </section>
       <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
+        <div class="scroll-down"></div>
+      </a>
     </div>
     <!-- /END Hero Section -->
 
@@ -172,7 +189,7 @@ Overall, this individual is a highly skilled and experienced software profession
       </div>
     </section>
     <!-- End Projects Section -->
-
+   
     <!-- Contact Section -->
     <section id="contact">
       <div class="container">

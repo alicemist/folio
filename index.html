@@ -78,16 +78,16 @@
     <!-- Hero Section -->
     
     <div id="hero">
-      <a href="" class="toggle-down-link" aria-label="scroll-down">
-        <div class="toggle-down"></div>
+      <a class="toggle-down-link" aria-label="scroll-down">
+        <div class="toggle-down" id="toggleButton"></div>
         <script>
           document.getElementById("toggleButton").addEventListener("click", function() {
               var currentStyle = document.querySelector('link[rel="stylesheet"]');
-              
-              if (currentStyle.getAttribute("href") === "dark.css") {
-                  currentStyle.setAttribute("href", "main.css");
+              console.log(currentStyle + 'alicem')
+              if (currentStyle.getAttribute("href") === "./css/dark.css") {
+                  currentStyle.setAttribute("href", "./css/main.css");
               } else {
-                  currentStyle.setAttribute("href", "dark.css");
+                  currentStyle.setAttribute("href", "./css/dark.css");
               }
           });
       </script>
